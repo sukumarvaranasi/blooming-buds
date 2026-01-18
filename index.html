@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blooming Buds Home Daycare & Pre-school | Fremont, CA</title>
+    <meta name="description" content="A Place Where Little Minds Grow Big! Licensed home daycare in Fremont, California offering quality childcare for ages 12 months to 8 years.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="logo-icon">🌸</span>
+                <span class="logo-text">Blooming Buds</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#who-we-are">Who We Are</a></li>
+                <li><a href="#program">Program</a></li>
+                <li><a href="#educator">Educator</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="enroll-btn" onclick="openEnrollModal()">Enroll Now</button>
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <ul class="mobile-nav-links">
+            <li><a href="#home" onclick="closeMobileMenu()">Home</a></li>
+            <li><a href="#about" onclick="closeMobileMenu()">About</a></li>
+            <li><a href="#who-we-are" onclick="closeMobileMenu()">Who We Are</a></li>
+            <li><a href="#program" onclick="closeMobileMenu()">Program</a></li>
+            <li><a href="#educator" onclick="closeMobileMenu()">Educator</a></li>
+            <li><a href="#contact" onclick="closeMobileMenu()">Contact</a></li>
+            <li><button class="enroll-btn mobile" onclick="openEnrollModal(); closeMobileMenu()">Enroll Now</button></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+            <div class="floating-icon icon-1">🌻</div>
+            <div class="floating-icon icon-2">🦋</div>
+            <div class="floating-icon icon-3">🌈</div>
+            <div class="floating-icon icon-4">⭐</div>
+            <div class="floating-icon icon-5">🎨</div>
+        </div>
+        <div class="hero-content">
+            <div class="license-badge">
+                <span>✓ Licensed Facility #015701395</span>
+            </div>
+            <h1>Blooming Buds<br><span class="highlight">Home Daycare & Pre-school</span></h1>
+            <p class="tagline">A Place Where Little Minds Grow Big!</p>
+            <p class="location">
+                <span class="location-icon">📍</span>
+                Fremont, California • Near Irvington High School
+            </p>
+            <div class="hero-cta">
+                <button class="btn btn-primary" onclick="openEnrollModal()">Start Enrollment</button>
+                <a href="#about" class="btn btn-secondary">Learn More</a>
+            </div>
+            <div class="hero-badges">
+                <div class="badge">
+                    <span class="badge-icon">🎓</span>
+                    <span>Early Childhood Educator</span>
+                </div>
+                <div class="badge">
+                    <span class="badge-icon">🏥</span>
+                    <span>Pediatric First Aid & CPR</span>
+                </div>
+                <div class="badge">
+                    <span class="badge-icon">✅</span>
+                    <span>CA Preventive Health & Safety</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Marquee -->
+    <div class="features-marquee">
+        <div class="marquee-track">
+            <div class="marquee-content">
+                <span>🔒 Safe & Secure</span>
+                <span>🏠 Home-Like Environment</span>
+                <span>🥗 Organic Nutritious Meals</span>
+                <span>⏰ Flexible Hours</span>
+                <span>👶 Individual Focus</span>
+                <span>🎨 Play-Based Learning</span>
+                <span>🌿 Outdoor Exploration</span>
+                <span>📚 Educational Activities</span>
+                <span>🔒 Safe & Secure</span>
+                <span>🏠 Home-Like Environment</span>
+                <span>🥗 Organic Nutritious Meals</span>
+                <span>⏰ Flexible Hours</span>
+                <span>👶 Individual Focus</span>
+                <span>🎨 Play-Based Learning</span>
+                <span>🌿 Outdoor Exploration</span>
+                <span>📚 Educational Activities</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Why Choose Us Section -->
+    <section id="about" class="why-choose-us">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Why Us</span>
+                <h2>Why Choose Our Home Daycare?</h2>
+                <p>We provide a nurturing environment where your child can thrive, learn, and grow</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card" data-aos="fade-up">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Safety First</h3>
+                    <p>Your child's safety is our top priority in our fully licensed and state-approved home daycare, featuring childproofed spaces, secure outdoor play areas, and constant supervision in a clean, nurturing environment.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon">🏠</div>
+                    <h3>Home-Like Environment</h3>
+                    <p>Your child will thrive in our warm, home-like environment where they receive personalized attention and care in a comfortable, familiar setting that feels just like home.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon">🥗</div>
+                    <h3>Healthy Organic Meals</h3>
+                    <p>We provide freshly prepared, healthy organic nutritious meals daily, ensuring balanced nutrition that supports your child's growth and development in our safe, loving environment.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon">⏰</div>
+                    <h3>Flexible Hours</h3>
+                    <p>We offer flexible hours to accommodate your busy schedule, providing reliable childcare when you need it most—because we understand that every family's needs are unique.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="feature-icon">👶</div>
+                    <h3>Individual Focus</h3>
+                    <p>With our small group sizes, each child receives the individual attention and personalized care they deserve, allowing us to nurture their unique interests and developmental needs.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="feature-icon">✅</div>
+                    <h3>Fully Licensed</h3>
+                    <p>Our facility is fully licensed and meets all state requirements, giving you peace of mind that your child is in a safe, regulated environment with qualified caregivers.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Who We Are Section -->
+    <section id="who-we-are" class="who-we-are">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Who We Are</span>
+                <h2>Welcome to Blooming Buds</h2>
+                <p>A loving Indian family where care is the priority and quality is most affordable</p>
+            </div>
+            <div class="who-we-are-content">
+                <div class="about-text">
+                    <p class="lead">Welcome to Blooming Buds Home Daycare at 41360 Alline Street, Fremont, CA 94538.</p>
+                    <p>We provide quality childcare for children ages <strong>12 months to 8 years</strong> in a warm, nurturing, small family daycare environment. Our focus is on providing personalized attention and creating a home-like atmosphere where every child feels safe, loved, and valued.</p>
+                    <div class="promise-box">
+                        <h4>🤝 Our Promise</h4>
+                        <p>Being parents, we understand how difficult it is to have your child in someone else's care. Children's surrounding environment affects their absorbent mind; hence it is important to have good quality care.</p>
+                        <p>When you come to Blooming Buds, you feel that you have come to the right place. It is not just a daycare but an <strong>extended family</strong> where children feel emotionally secure.</p>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="images/image1.png" alt="Blooming Buds Daycare Facility" class="main-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Media Gallery Section - Slideshow -->
+    <section id="gallery" class="media-gallery">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Gallery</span>
+                <h2>Children in Action</h2>
+                <p>Our children enjoy a variety of activities throughout the day</p>
+            </div>
+            
+            <!-- Slideshow Container -->
+            <div class="slideshow-container">
+                <!-- Slides are generated automatically from script.js GALLERY_MEDIA array -->
+                <div class="slideshow-wrapper" id="slideshow">
+                    <!-- Slides will be inserted here by JavaScript -->
+                </div>
+                
+                <!-- Navigation Arrows -->
+                <button class="slide-arrow prev" onclick="changeSlide(-1)">❮</button>
+                <button class="slide-arrow next" onclick="changeSlide(1)">❯</button>
+                
+                <!-- Progress Bar -->
+                <div class="slide-progress">
+                    <div class="progress-bar" id="progressBar"></div>
+                </div>
+            </div>
+            
+            <!-- Slide Indicators - Generated automatically -->
+            <div class="slide-indicators" id="slideIndicators">
+                <!-- Indicators will be inserted here by JavaScript -->
+            </div>
+            
+            <!-- Play/Pause Control -->
+            <div class="slideshow-controls">
+                <button class="control-btn" id="playPauseBtn" onclick="toggleAutoPlay()">
+                    <span class="pause-icon">⏸</span>
+                    <span class="play-icon" style="display: none;">▶</span>
+                </button>
+                <span class="control-label">Auto-play: <strong id="autoPlayStatus">ON</strong></span>
+            </div>
+            
+            <p class="gallery-caption">We create an environment where every child can explore, learn, and grow at their own pace.</p>
+        </div>
+    </section>
+
+    <!-- Philosophy Section -->
+    <section id="philosophy" class="philosophy">
+        <div class="container">
+            <div class="philosophy-content">
+                <div class="philosophy-text">
+                    <span class="section-tag">Our Approach</span>
+                    <h2>Our Philosophy</h2>
+                    <p class="lead">At the heart of our home daycare is a genuine passion for caring for young children during their most formative years.</p>
+                    <p>We are deeply committed to making every day memorable through engaging activities and joyful discoveries. We embrace inclusive education, ensuring that all children feel valued and supported regardless of their developmental pace, learning style, or background.</p>
+                    <p>Our holistic approach nurtures the whole child—<strong>physical, cognitive, social, emotional, and creative</strong>—through active play, healthy organic nutrition, hands-on learning, and positive peer interactions.</p>
+                    <div class="philosophy-highlight">
+                        <span class="highlight-icon">💝</span>
+                        <p>We believe that when all aspects of development are nurtured together in a caring environment, children become confident, capable, and compassionate individuals ready to embrace the world around them.</p>
+                    </div>
+                </div>
+                <div class="philosophy-visual">
+                    <div class="visual-card">
+                        <div class="visual-item">
+                            <span class="item-icon">🧠</span>
+                            <span class="item-text">Cognitive</span>
+                        </div>
+                        <div class="visual-item">
+                            <span class="item-icon">💪</span>
+                            <span class="item-text">Physical</span>
+                        </div>
+                        <div class="visual-item">
+                            <span class="item-icon">👥</span>
+                            <span class="item-text">Social</span>
+                        </div>
+                        <div class="visual-item">
+                            <span class="item-icon">❤️</span>
+                            <span class="item-text">Emotional</span>
+                        </div>
+                        <div class="visual-item">
+                            <span class="item-icon">🎨</span>
+                            <span class="item-text">Creative</span>
+                        </div>
+                        <div class="visual-center">
+                            <span>Whole Child Development</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Program Section -->
+    <section id="program" class="program">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Our Program</span>
+                <h2>Play-Based Learning</h2>
+                <p>All learning happens through developmentally appropriate, play-based activities</p>
+            </div>
+            <div class="program-content">
+                <div class="program-activities">
+                    <h3>Daily Activities Include:</h3>
+                    <div class="activities-grid">
+                        <div class="activity-item">
+                            <span class="activity-icon">🎨</span>
+                            <span>Art & Crafts</span>
+                        </div>
+                        <div class="activity-item">
+                            <span class="activity-icon">🎵</span>
+                            <span>Music & Movement</span>
+                        </div>
+                        <div class="activity-item">
+                            <span class="activity-icon">📚</span>
+                            <span>Reading & Stories</span>
+                        </div>
+                        <div class="activity-item">
+                            <span class="activity-icon">🧩</span>
+                            <span>Puzzles & Games</span>
+                        </div>
+                        <div class="activity-item">
+                            <span class="activity-icon">🍳</span>
+                            <span>Cooking Activities</span>
+                        </div>
+                        <div class="activity-item">
+                            <span class="activity-icon">💧</span>
+                            <span>Water Play</span>
+                        </div>
+                        <div class="activity-item">
+                            <span class="activity-icon">🌱</span>
+                            <span>Gardening</span>
+                        </div>
+                        <div class="activity-item">
+                            <span class="activity-icon">🏃</span>
+                            <span>Outdoor Play</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="program-details">
+                    <div class="detail-card">
+                        <h4>🌿 Outdoor Exploration</h4>
+                        <p>We value outdoor exploration in our spacious outdoor area. We believe that fresh air, time in nature, and getting dirty are essential elements for healthy child development.</p>
+                    </div>
+                    <div class="detail-card">
+                        <h4>🤝 Social Development</h4>
+                        <p>Through shared play and mealtimes, children develop essential social skills like sharing, respect for different ages and abilities, communication, observation, independence, and conflict resolution.</p>
+                    </div>
+                    <div class="detail-card">
+                        <h4>🎯 Child-Led Learning</h4>
+                        <p>We encourage children to be messy, creative, and free with their activities. Children thrive when they develop a strong sense of self-awareness and confidence through free play and exploration.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schedule Section -->
+    <section class="schedule">
+        <div class="container">
+            <div class="section-header light">
+                <span class="section-tag">Daily Routine</span>
+                <h2>A Day at Blooming Buds</h2>
+                <p>Structured yet flexible schedule to support your child's growth</p>
+            </div>
+            <div class="schedule-timeline">
+                <div class="timeline-item">
+                    <div class="time">8:30 - 9:00 AM</div>
+                    <div class="activity">
+                        <span class="activity-emoji">🚪</span>
+                        <span>Arrival & Free Play</span>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="time">9:00 - 9:30 AM</div>
+                    <div class="activity">
+                        <span class="activity-emoji">🥣</span>
+                        <span>Breakfast Time</span>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="time">9:45 - 10:30 AM</div>
+                    <div class="activity">
+                        <span class="activity-emoji">🎵</span>
+                        <span>Circle Time & Music</span>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="time">10:30 - 11:00 AM</div>
+                    <div class="activity">
+                        <span class="activity-emoji">🍎</span>
+                        <span>Snack Time (Fruits)</span>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="time">11:00 - 12:00 PM</div>
+                    <div class="activity">
+                        <span class="activity-emoji">🎨</span>
+                        <span>Activity & Learning Time</span>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="time">12:00 - 1:00 PM</div>
+                    <div class="activity">
+                        <span class="activity-emoji">🍽️</span>
+                        <span>Lunch Time</span>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="time">1:00 - 3:00 PM</div>
+                    <div class="activity">
+                        <span class="activity-emoji">😴</span>
+                        <span>Nap / Quiet Time</span>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="time">3:30 - 4:00 PM</div>
+                    <div class="activity">
+                        <span class="activity-emoji">🥤</span>
+                        <span>Afternoon Snack</span>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="time">4:00 - 5:00 PM</div>
+                    <div class="activity">
+                        <span class="activity-emoji">📖</span>
+                        <span>Crafts & Story Time</span>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="time">5:00 - 5:30 PM</div>
+                    <div class="activity">
+                        <span class="activity-emoji">🏠</span>
+                        <span>Free Play & Pick Up</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Educator Section -->
+    <section id="educator" class="educator">
+        <div class="container">
+            <div class="educator-content">
+                <div class="educator-image">
+                    <div class="image-placeholder">
+                        <span class="placeholder-icon">👩‍🏫</span>
+                        <span class="placeholder-text">Srilatha</span>
+                    </div>
+                    <div class="experience-badge">
+                        <span class="years">10+</span>
+                        <span class="label">Years Experience</span>
+                    </div>
+                </div>
+                <div class="educator-info">
+                    <span class="section-tag">Meet Your Educator</span>
+                    <h2>Srilatha</h2>
+                    <p class="subtitle">Highly Experienced Early Childhood Educator</p>
+                    <p class="intro">With a genuine passion for nurturing young minds, Srilatha brings over 10 years of extensive experience in early childhood education to her home daycare. Her journey in childcare spans across two countries—<strong>Australia and United States</strong>—giving her a rich, diverse perspective on child development and care.</p>
+                    
+                    <div class="credentials">
+                        <h4>Credentials & Certifications</h4>
+                        <ul class="credentials-list">
+                            <li>
+                                <span class="credential-icon">🎓</span>
+                                <span>Associate Degree in Early Childhood Education (Australia)</span>
+                            </li>
+                            <li>
+                                <span class="credential-icon">🏥</span>
+                                <span>Pediatric First Aid and CPR Certified</span>
+                            </li>
+                            <li>
+                                <span class="credential-icon">✅</span>
+                                <span>CA Preventive Health and Safety Certified</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="experience">
+                        <h4>Professional Experience</h4>
+                        <div class="experience-items">
+                            <div class="exp-item">
+                                <span class="exp-years">7</span>
+                                <span class="exp-text">Years running family daycare</span>
+                            </div>
+                            <div class="exp-item">
+                                <span class="exp-years">3</span>
+                                <span class="exp-text">Years in preschool settings</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <p class="closing">Srilatha's commitment to creating a warm, nurturing environment where children can explore, learn, and grow through play makes her home daycare a special place where your child will feel safe, valued, and loved every single day.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Get In Touch</span>
+                <h2>Contact Us</h2>
+                <p>We'd love to hear from you and answer any questions</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-card">
+                        <div class="info-icon">📍</div>
+                        <div class="info-details">
+                            <h4>Address</h4>
+                            <p>41360 Alline Street<br>Fremont, CA 94538</p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">📞</div>
+                        <div class="info-details">
+                            <h4>Phone</h4>
+                            <p><a href="tel:5104593396">(510) 459-3396</a></p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">🏷️</div>
+                        <div class="info-details">
+                            <h4>Facility Number</h4>
+                            <p>#015701395</p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">🕐</div>
+                        <div class="info-details">
+                            <h4>Hours</h4>
+                            <p>Monday - Friday<br>8:30 AM - 5:30 PM</p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">👶</div>
+                        <div class="info-details">
+                            <h4>Age Range</h4>
+                            <p>12 months to 8 years</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contactForm" action="https://formsubmit.co/admin@bloomingbuds.com" method="POST">
+                        <h3>Send Us a Message</h3>
+                        <!-- FormSubmit Configuration -->
+                        <input type="hidden" name="_subject" value="New Contact Message - Blooming Buds Daycare">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_template" value="table">
+                        <input type="hidden" name="_next" value="https://yoursite.github.io/website/thank-you.html">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="parentName">Parent's Name *</label>
+                                <input type="text" id="parentName" name="Parent Name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number *</label>
+                                <input type="tel" id="phone" name="Phone Number" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="childName">Child's Name</label>
+                                <input type="text" id="childName" name="Child Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="childAge">Child's Age</label>
+                                <input type="text" id="childAge" name="Child Age">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="Email">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="Message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="map-container">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3163.8!2d-121.96!3d37.52!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzfCsDMxJzEyLjAiTiAxMjHCsDU3JzM2LjAiVw!5e0!3m2!1sen!2sus!4v1"
+                width="100%" 
+                height="400" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+            <div class="map-overlay">
+                <div class="overlay-content">
+                    <h3>🌸 Blooming Buds Home Daycare</h3>
+                    <p>41360 Alline Street, Fremont, CA 94538</p>
+                    <p>Near Irvington High School, John M. Horner Middle School & O. N. Hirsch Elementary</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="logo-icon">🌸</span>
+                    <span class="logo-text">Blooming Buds</span>
+                    <p>Home Daycare & Pre-school</p>
+                    <p class="tagline">A Place Where Little Minds Grow Big!</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#philosophy">Philosophy</a></li>
+                        <li><a href="#program">Program</a></li>
+                        <li><a href="#educator">Educator</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Info</h4>
+                    <p>📍 41360 Alline Street, Fremont, CA 94538</p>
+                    <p>📞 <a href="tel:5104593396">(510) 459-3396</a></p>
+                    <p>🏷️ License #015701395</p>
+                    <p>🕐 Mon-Fri: 8:30 AM - 5:30 PM</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Blooming Buds Home Daycare & Pre-school. All rights reserved.</p>
+                <p>Where Little Minds Grow Big! 🌸</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Enrollment Modal -->
+    <div class="modal" id="enrollModal">
+        <div class="modal-overlay" onclick="closeEnrollModal()"></div>
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeEnrollModal()">&times;</button>
+            <h2>🌸 Enrollment Request</h2>
+            <p>Fill out the form below and we'll get back to you soon!</p>
+            <form class="enrollment-form" id="enrollmentForm" action="https://formsubmit.co/admin@bloomingbuds.com" method="POST">
+                <!-- FormSubmit Configuration -->
+                <input type="hidden" name="_subject" value="🌸 New Enrollment Request - Blooming Buds Daycare">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_next" value="https://yoursite.github.io/website/thank-you.html">
+                <div class="form-group">
+                    <label for="enrollChildName">Child's Name *</label>
+                    <input type="text" id="enrollChildName" name="Child Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="enrollChildAge">Child's Age *</label>
+                    <input type="text" id="enrollChildAge" name="Child Age" required>
+                </div>
+                <div class="form-group">
+                    <label for="enrollParentName">Parent's Name *</label>
+                    <input type="text" id="enrollParentName" name="Parent Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="enrollPhone">Phone Number *</label>
+                    <input type="tel" id="enrollPhone" name="Phone Number" required>
+                </div>
+                <div class="form-group">
+                    <label for="enrollEmail">Email Address</label>
+                    <input type="email" id="enrollEmail" name="Email">
+                </div>
+                <div class="form-group">
+                    <label for="enrollComments">Comments or Questions</label>
+                    <textarea id="enrollComments" name="Comments" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-full">Submit Enrollment Request</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
