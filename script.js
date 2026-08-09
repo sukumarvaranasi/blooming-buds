@@ -428,6 +428,17 @@ const GALLERY_MEDIA = [
     { file: 'images/image10.jpeg', caption: 'Joyful Moments', icon: '🌟' },
     { file: 'images/image11.jpeg', caption: 'Growing Together', icon: '🌱' },
     { file: 'images/image12.jpeg', caption: 'Happy Days', icon: '☀️' },
+    { file: 'images/image13.jpeg', caption: 'Happy Kids', icon: '☀️' },
+    { file: 'images/image14.jpeg', caption: 'Happy Kids', icon: '😊' },
+    { file: 'images/image15.jpeg', caption: 'Playtime Fun', icon: '🎈' },
+    { file: 'images/image16.jpeg', caption: 'Learning', icon: '👫' },
+    { file: 'images/image17.jpeg', caption: 'Learning Together', icon: '✏️' },
+    { file: 'images/image18.jpeg', caption: 'Learning Together', icon: '🔍' },
+    { file: 'images/image19.jpeg', caption: 'Learning Together', icon: '🌟' },
+    { file: 'images/image20.jpeg', caption: 'Growing Together', icon: '🌱' },
+    { file: 'images/image21.jpeg', caption: 'Happy Days', icon: '☀️' },
+    { file: 'images/image22.jpeg', caption: 'Outdoor Fun', icon: '☀️' },
+    { file: 'images/image23.jpeg', caption: 'Outdoor Fun', icon: '☀️' },
     
     // Videos (add more videos here)
     { file: 'videos/video.mp4', caption: 'Our Daycare in Action', icon: '🎬', isVideo: true },
